@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="logo.png" sizes="16x16" type="image/png"> 
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+
+  <!-- TODO add manifest here -->
+  <link rel="manifest" href="/manifest.json">
+  <!-- Add to home screen for Safari on iOS -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="Hackton Olx PWA">
+  <link rel="apple-touch-icon" href="logo.png">
+  <meta name="msapplication-TileImage" content="logo.png">
+  <meta name="msapplication-TileColor" content="#2F3BA2">
+  
+</head>
+<body onload="LoginLoad();getPostAdvertIndex();">
+<nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#"><img src="logo.png" style="width: 50px;height: 50px;"></a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="indextab"><a href="login.html">My Account</a></li>
+            <li class="indextab"><a href="postadd.html">Submit an Ad</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+ <div class="container conmar">
+
+
+    <h1>Free classifieds in Pakistan</h1>
+    <p>Pakistan's Largest Marketplace</p>
+
+<div class="container ">
+<div class="row" id="imagerow">
+    
+
+
+</div>
+  </div>
+  
+
+</div>
+
+
+
+<!-- <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script> -->
+
+<script src="https://www.gstatic.com/firebasejs/5.0.4/firebase-app.js"></script>
+<!-- script for firebase authentication -->
+<script src="https://www.gstatic.com/firebasejs/5.0.4/firebase-auth.js"></script>
+ <!-- script for firebase authentication -->
+
+<script src="https://www.gstatic.com/firebasejs/5.0.4/firebase-firestore.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/5.1.0/firebase.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.2.0/firebase.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.3.0/firebase.js"></script>
+
+<script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="logo.png" sizes="16x16" type="image/png"> 
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+
+
+</head>
+<body onload="checkLoad();fetchCategories()">
+<nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#"><img src="logo.png" style="width: 50px;height: 50px;"></a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="category.html">Add Category</a></li>
+            <li><a href="viewadvert.html">Adertisement</a></li>
+            <li class="active"><a href="postadd.html">Post Add</a></li>
+             <li><a href="favourite.html">Favourite</a></li>
+             <li><a href="chatroom.html">ChatRoom</a></li>             
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="index.html">Signout</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+     <div class="container conmar">
+<form id="signup">
+ 
+    <h1>Post an Advertisement</h1>
+    <hr>
+
+	<label for="name"><b>Name</b></label>
+    <input type="text" placeholder="Enter name" id="name" name="name" required>
+
+    <label for="price"><b>Price Rs..</b></label>
+    <input type="number" min="1" id="price" name="price" required>
+
+
+     <label for="categories"><b>Categories</b></label>
+    <select id="categories"></select>
+
+    <label for="description"><b>Description</b></label>
+    <textarea id="description" col="30" rows="5" ></textarea>
+
+   <label for="model"><b>Modal</b></label>
+    <input type="text" placeholder="Enter model" id="model" name="model" required>
+
+  <label for="year"><b>Year</b></label>
+    <select id="year">
+        <option value="2017">2017</option>
+        <option value="2018">2018</option>
+        <option value="2019">2019</option>
+        <option value="2020">2020</option>
+    </select>
+
+    <label for="fileap"><b>Upload Picture</b></label>
+    <input type="file" id="fileap" name="fileap" required>
+
+
+    <button type="button" id="btnadd" onclick="PostAdd()" class="registerbtn">Post Advertisement</button>
+
+  
+  
+</form>
+
+
+  </div>
+
+<!-- <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script> -->
+
+<script src="https://www.gstatic.com/firebasejs/5.0.4/firebase-app.js"></script>
+<!-- script for firebase authentication -->
+<script src="https://www.gstatic.com/firebasejs/5.0.4/firebase-auth.js"></script>
+ <!-- script for firebase authentication -->
+
+<script src="https://www.gstatic.com/firebasejs/5.0.4/firebase-firestore.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/5.1.0/firebase.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.2.0/firebase.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.3.0/firebase.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
